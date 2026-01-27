@@ -12,4 +12,3 @@ connection = sqlite3.connect(db_path)
 df.to_sql('clean_data', connection, if_exists='replace', index=False)
 
 connection.close()
-print("\n✅ Data successfully uploaded to SQL database!")
